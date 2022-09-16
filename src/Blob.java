@@ -40,7 +40,7 @@ import java.io.PrintWriter;
 			
 			read.close();
 			
-			Path filePathToWrite = Paths.get("/Users/elizakoblentz/eclipse-workspace/GitPrerequisite/objects/" + nameOfFile); 
+			Path filePathToWrite = Paths.get("./objects/" + nameOfFile); 
 	    	try {
 	    		Files.writeString(filePathToWrite, contentOfFile, StandardCharsets.ISO_8859_1);
 	    	} catch (IOException exception) {
@@ -91,10 +91,10 @@ import java.io.PrintWriter;
 	     * end of creating sha1 code
 	     */
 		
-	    public static void main (String [] args) throws FileNotFoundException, NoSuchAlgorithmException, IOException
-	    { 
-	    	Blob blob1 = new Blob ("Eliza.txt");
-	    }
+	    //public static void main (String [] args) throws FileNotFoundException, NoSuchAlgorithmException, IOException
+	    //{ 
+	    //	Blob blob1 = new Blob ("Eliza.txt");
+	    //}
 	    
 	}
 
